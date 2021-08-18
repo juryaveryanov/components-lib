@@ -20,6 +20,10 @@ module.exports = {
     config.resolve.alias['@'] = path.resolve(__dirname, '../src')
     config.resolve.alias['~'] = path.resolve(__dirname, '..')
     config.resolve.alias.path = require.resolve('path-browserify')
+
+    if( configType==='PRODUCTION' ) {
+      config.base = '/components-lib/'
+    }
     config.plugins.push(
       createSvgSpritePlugin({
         symbolId: 'icon-[name]-[hash]',
