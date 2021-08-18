@@ -1,0 +1,7 @@
+node_modules
+storybook-static
+.DS_Store
+dist
+dist-ssr
+*.local
+deploy.bat
