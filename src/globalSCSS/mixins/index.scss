@@ -1,0 +1,94 @@
+@use "sass:math";
+
+@mixin clearfix() {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+
+@mixin box-shadow ($level) {
+
+  @if $level == 0 {
+    box-shadow: 0 12px 36px rgba($black, .2);
+  } @else if $level == 1 {
+    box-shadow: 0 2px 2px rgba($black, .1), 0 0 2px rgba($black, .1);
+  } @else if $level == 2 {
+    box-shadow: 0 3px 6px rgba($black, .16), 0 3px 6px rgba($black, .15);
+  } @else if $level == 3 {
+    box-shadow: 0 10px 20px rgba($black, .19), 0 6px 6px rgba($black, .15);
+  } @else if $level == 4 {
+    box-shadow: 0 14px 28px rgba($black, .25), 0 10px 10px rgba($black, .15);
+  } @else if $level == 5 {
+    box-shadow: 0 19px 38px rgba($black, .30), 0 15px 12px rgba($black, .15);
+  }
+}
+
+@mixin boxShadowHover() {
+  @include box-shadow(1);
+  transition: box-shadow .5s ease;
+  &:hover {
+    @include box-shadow(2);
+  }
+}
+
+@mixin text-shadow () {
+  text-shadow: 0px 0px 4px rgba(#000, .5);
+}
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@mixin input-styles() {
+  background-color: $lightest-gray;
+  border-radius: $radius;
+  border: 0;
+  border: 1px solid $light-gray;
+  box-shadow: none;
+  color: $text-color;
+  display: block;
+  font-family: $main-font;
+  font-size: 1rem;
+  height: 3rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease;
+  width: 100%;
+  &:focus {
+    @include box-shadow(2);
+    background-color: $white;
+    outline: none;
+    transition: box-shadow 0.5s ease, background-color 0.5s ease;
+  }
+  &::placeholder {
+    color: $gray;
+    font-size: math.div(16, 18) + rem;
+  }
+}
+
+@function svg-uri($svg) {
+  $encoded: '';
+  $slice: 2000;
+  $index: 0;
+  $loops: ceil(math.div(str-length($svg), $slice));
+
+  @for $i from 1 through $loops {
+    $chunk: str-slice($svg, $index, $index + $slice - 1);
+    $chunk: str-replace($chunk, '"', "'");
+    $chunk: str-replace($chunk, '<', '%3C');
+    $chunk: str-replace($chunk, '>', '%3E');
+    $chunk: str-replace($chunk, '&', '%26');
+    $chunk: str-replace($chunk, '#', '%23');
+    $encoded: #{$encoded}#{$chunk};
+    $index: $index + $slice;
+  }
+
+  @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
+}

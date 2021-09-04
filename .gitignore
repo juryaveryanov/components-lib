@@ -1,0 +1,9 @@
+node_modules
+.vscode
+.examples
+gh-pages
+.DS_Store
+dist
+dist-ssr
+*.local
+deploy.bat
