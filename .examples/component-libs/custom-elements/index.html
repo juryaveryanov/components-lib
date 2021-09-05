@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB custom elements test </title>
+    <style>
+      .wrapper{
+        padding: 1.5rem;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+    </style>
+    <script src="dist/custom-elements-lib.es.js" type="module"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div style="width:18rem">
+      <percentage-change-widget>
+        <widget-handle slot="controls"/>
+        <a-tooltip slot="info">Tooltip</a-tooltip>
+      </percentage-change-widget>
+    </div>
+  </div>
+</body>
+</html>
