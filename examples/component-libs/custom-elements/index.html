@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB custom elements test </title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" >
+    <style>
+      html, body {
+        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin:0;
+        padding: 0;
+        background-color: #fefefe;
+      }
+      .wrapper{
+        padding: 1.5rem;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      @media (min-width: 321px) {
+        html, body {
+          font-size: 16px;
+          font-size: 5vw;
+        }
+      }
+      @media (min-width: 560px) {
+        html, body {
+          font-size: 16px;
+        }
+      }
+      @media (min-width: 800px) {
+        html, body {font-size: 16px;}
+      }
+      @media (min-width: 1000px) {
+        html, body {font-size: 16px;}
+      }
+      @media (min-width: 1200px) {
+        html, body {font-size: 16px;}
+      }
+      @media (min-width: 1400px) {
+        html, body {font-size: 18px;}
+      }
+    </style>
+    <script src="dist/custom-elements-lib.es.js" type="module"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div style="width:18rem">
+    <percentage-change-widget 
+      title="Widget title 2" 
+      id="item_id_2" 
+      old-value="8806.125890516696" 
+      new-value="741.8709366437492"
+    >
+    <a-tooltip slot="info">Tooltip text 2</a-tooltip>
+    <widget-handle slot="controls"></widget-handle>
+    </percentage-change-widget>
+    </div>
+  </div>
+</body>
+</html>

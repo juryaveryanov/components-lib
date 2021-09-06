@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMD Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="./dist/style.css">
+    <style>
+      html, body {
+        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin:0;
+        padding: 0;
+        background-color: #fefefe;
+      }
+      .wrapper{
+        padding: 1.5rem;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      @media (min-width: 321px) {
+        html, body {
+          font-size: 16px;
+          font-size: 5vw;
+        }
+      }
+      @media (min-width: 560px) {
+        html, body {
+          font-size: 16px;
+        }
+      }
+      @media (min-width: 800px) {
+        html, body {font-size: 16px;}
+      }
+      @media (min-width: 1000px) {
+        html, body {font-size: 16px;}
+      }
+      @media (min-width: 1200px) {
+        html, body {font-size: 16px;}
+      }
+      @media (min-width: 1400px) {
+        html, body {font-size: 18px;}
+      }
+    </style>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./dist/components-lib.umd.js"></script>
+    
+</head>
+<body>
+  <div class="wrapper" id="widgets">
+    <widgets-layout @change-Order="changeOrder">    
+      <percentage-change-widget 
+        title="Widget title 1" 
+        id="item_id_1" 
+        :old-Value="6846.1065965034895" 
+        :new-Value="5043.258010692562"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 1</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 2" 
+        id="item_id_2" 
+        :old-Value="8806.125890516696" 
+        :new-Value="741.8709366437492"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 2</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 3" 
+        id="item_id_3" 
+        :old-Value="2339.855173854568" 
+        :new-Value="8113.554598230353"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 3</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 4" 
+        id="item_id_4" 
+        :old-Value="3800.956705218639" 
+        :new-Value="5204.652751643821"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 4</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 5" 
+        id="item_id_5" 
+        :old-Value="9828.020482825461" 
+        :new-Value="5672.310514272485"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 5</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 6" 
+        id="item_id_6" 
+        :old-Value="2687.6094117203866" 
+        :new-Value="7887.601983235535"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 6</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 7" 
+        id="item_id_7" 
+        :old-Value="9256.363370649438" 
+        :new-Value="1056.328108832232"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 7</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 8" 
+        id="item_id_8" 
+        :old-Value="6394.750272313126" 
+        :new-Value="2690.693123141112"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 8</a-tooltip>
+        </template>
+      </percentage-change-widget>
+      
+      <percentage-change-widget 
+        title="Widget title 9" 
+        id="item_id_9" 
+        :old-Value="1380.192954099142" 
+        :new-Value="3291.689399354407"
+      >
+        <template #controls>
+          <widget-handle/>
+        </template>
+        <template #info>
+          <a-tooltip>Tooltip text 9</a-tooltip>
+        </template>
+      </percentage-change-widget>
+    </widgets-layout>
+    <pre class="events" style="padding:1.5rem; background-color:snow"></pre>
+  </div>
+  <script type="module">
+    Vue.createApp({
+      components: {
+        'widgets-layout': ComponentsLib.WidgetsLayout,
+        'a-tooltip': ComponentsLib.ATooltip,
+        'widget-handle': ComponentsLib.WidgetHandle,
+        'percentage-change-widget': ComponentsLib.PercentageChangeWidget
+      },
+      methods: {
+        changeOrder: (e)=>{
+          document.querySelector('.events').innerHTML = JSON.stringify(e, null, '\t');
+        }
+      }
+    }).mount('#widgets');
+  </script>
+</body>
+</html>

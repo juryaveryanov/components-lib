@@ -1,4 +1,4 @@
-.PercentageChangeWidget[data-v-7b83ab17] {
+.PercentageChangeWidget[data-v-fe13800e] {
   position: relative;
   border: 1px solid #e5e5e5;
   padding: 0 1rem;
@@ -8,25 +8,25 @@
   height: 7rem;
   --grows-color: #ea424f;
 }
-.PercentageChangeWidget.isGrows[data-v-7b83ab17] {
+.PercentageChangeWidget.isGrows[data-v-fe13800e] {
   --grows-color: #2bbd7c;
 }
-.PercentageChangeWidget.isGrows.reverseColors[data-v-7b83ab17] {
+.PercentageChangeWidget.isGrows.reverseColors[data-v-fe13800e] {
   --grows-color: #ea424f;
 }
-.PercentageChangeWidget *[data-v-7b83ab17] {
+.PercentageChangeWidget *[data-v-fe13800e] {
   box-sizing: border-box;
 }
-.PercentageChangeWidget-tooltip[data-v-7b83ab17] {
+.PercentageChangeWidget-tooltip[data-v-fe13800e] {
   position: absolute;
   top: calc(.5rem - 2px);
   right: calc(.5rem - 1px);
 }
-.PercentageChangeWidget-difference[data-v-7b83ab17] {
+.PercentageChangeWidget-difference[data-v-fe13800e] {
   height: 1.5rem;
   padding: 0.125rem 0;
 }
-.PercentageChangeWidget-difference > span[data-v-7b83ab17] {
+.PercentageChangeWidget-difference > span[data-v-fe13800e] {
   font-size: 1.75rem;
   vertical-align: baseline;
   line-height: 0.67;
@@ -34,7 +34,7 @@
   color: #485359;
   font-weight: 600;
 }
-.PercentageChangeWidget-difference > svg[data-v-7b83ab17] {
+.PercentageChangeWidget-difference > svg[data-v-fe13800e] {
   height: 1.19rem;
   width: 1.19rem;
   fill: var(--grows-color);
@@ -42,7 +42,7 @@
   opacity: 0.5;
   padding: 0.125rem;
 }
-.PercentageChangeWidget-comparedValues[data-v-7b83ab17] {
+.PercentageChangeWidget-comparedValues[data-v-fe13800e] {
   font-size: 0.875rem;
   text-transform: uppercase;
   font-style: italic;
@@ -51,7 +51,7 @@
   height: 2.25rem;
   line-height: 2.25rem;
 }
-.PercentageChangeWidget-title[data-v-7b83ab17] {
+.PercentageChangeWidget-title[data-v-fe13800e] {
   font-size: 1rem;
   font-style: normal;
   color: #698696;
@@ -62,7 +62,7 @@
   text-transform: none;
   border-bottom: 1px solid #e5e5e5;
   height: 2rem;
-  line-height: 2;
+  line-height: 2rem;
 }.WidgetsLayout[data-v-55ae3f27] {
   display: flex;
   flex-wrap: wrap;
@@ -105,12 +105,12 @@
 }
 .WidgetsLayout .WidgetsLayout-item.no-move[data-v-55ae3f27] {
   transition: transform 0s;
-}.ATooltip[data-v-106cb19b] {
+}.ATooltip[data-v-66a36786] {
   display: inline-block;
   position: relative;
   height: 1.25rem;
   width: 1.25rem;
-  border: 2px solid rgba(63, 141, 247, 0.5);
+  border: 0.125rem solid rgba(63, 141, 247, 0.5);
   border-radius: 50%;
   color: #3f8df7;
   vertical-align: text-bottom;
@@ -121,10 +121,10 @@
   line-height: 0;
   box-sizing: border-box;
 }
-.ATooltip *[data-v-106cb19b] {
+.ATooltip *[data-v-66a36786] {
   box-sizing: border-box;
 }
-.ATooltip > span[data-v-106cb19b] {
+.ATooltip > span[data-v-66a36786] {
   transform: scale3d(0, 0, 0);
   transition: transform 0.25s ease, opacity 0.25s ease-in-out;
   position: absolute;
@@ -132,7 +132,7 @@
   box-shadow: 0 10px 20px rgba(55, 70, 79, 0.19), 0 6px 6px rgba(55, 70, 79, 0.15);
   border-radius: 0.125rem;
   padding: 0.8rem 1.25rem 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   text-align: left;
   color: #485359;
@@ -159,43 +159,34 @@
     }
   }
   */
-  /*&::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: -.5rem;
-    top: .75rem;
-  }*/
 }
-.ATooltip > span.right[data-v-106cb19b] {
+.ATooltip > span.right[data-v-66a36786] {
   top: -1.15rem;
   left: 1.5rem;
   transform-origin: 0 1.15rem;
 }
-.ATooltip > span.right[data-v-106cb19b]::before {
+.ATooltip > span.right[data-v-66a36786]::before {
   top: 1.15rem;
   left: -0.35rem;
 }
-.ATooltip > span.left[data-v-106cb19b] {
+.ATooltip > span.left[data-v-66a36786] {
   top: -1.15rem;
   right: 1.5rem;
 }
-.ATooltip > span.left[data-v-106cb19b]::before {
+.ATooltip > span.left[data-v-66a36786]::before {
   top: 1.15rem;
   right: -0.35rem;
 }
-.ATooltip > span.bottomCenter[data-v-106cb19b] {
+.ATooltip > span.bottomCenter[data-v-66a36786] {
   top: 1.5rem;
   left: -7rem;
 }
-.ATooltip > span.bottomCenter[data-v-106cb19b]::before {
+.ATooltip > span.bottomCenter[data-v-66a36786]::before {
   top: -0.35rem;
   right: 50%;
   transform: translateX(115%) rotate(45deg);
 }
-.ATooltip > span[data-v-106cb19b]::before {
+.ATooltip > span[data-v-66a36786]::before {
   content: "";
   display: block;
   position: absolute;
@@ -207,30 +198,30 @@
   transform: rotate(45deg);
   z-index: -1;
 }
-.ATooltip[data-v-106cb19b]::before, .ATooltip[data-v-106cb19b]::after {
+.ATooltip[data-v-66a36786]::before, .ATooltip[data-v-66a36786]::after {
   content: "";
   display: block;
-  width: 2px;
+  width: 0.125rem;
   background-color: rgba(63, 141, 247, 0.5);
   position: absolute;
-  left: calc(50% - 1px );
-  top: calc( 50% - 1px );
-  bottom: 3px;
+  left: calc(50% - .0625rem);
+  top: calc(50% - .0625rem);
+  bottom: 0.1875rem;
   transition: all 0.25s ease-in;
 }
-.ATooltip[data-v-106cb19b]::before {
-  top: 3px;
-  height: 2px;
+.ATooltip[data-v-66a36786]::before {
+  top: 0.1875rem;
+  height: 0.125rem;
 }
-.ATooltip[aria-hidden=false][data-v-106cb19b] {
+.ATooltip[aria-hidden=false][data-v-66a36786] {
   background-color: #3f8df7;
   transition: background-color 0.25s ease-in;
 }
-.ATooltip[aria-hidden=false] > span[data-v-106cb19b] {
+.ATooltip[aria-hidden=false] > span[data-v-66a36786] {
   transform: scale3d(1, 1, 1);
   transition: transform 0.25s ease-in, opacity 0.25s ease-out;
 }
-.ATooltip[aria-hidden=false][data-v-106cb19b]::before, .ATooltip[aria-hidden=false][data-v-106cb19b]::after {
+.ATooltip[aria-hidden=false][data-v-66a36786]::before, .ATooltip[aria-hidden=false][data-v-66a36786]::after {
   background-color: #fff;
   bottom: auto;
   top: 50%;
@@ -239,10 +230,10 @@
   transform-origin: center;
   transition: all 0.25s ease-in;
 }
-.ATooltip[aria-hidden=false][data-v-106cb19b]::after {
+.ATooltip[aria-hidden=false][data-v-66a36786]::after {
   transform: translateY(-50%) rotate(-45deg);
 }
-@keyframes toolTipFade-106cb19b {
+@keyframes toolTipFade-66a36786 {
 0% {
     opacity: 0;
     transform: scale3d(0, 0, 0);

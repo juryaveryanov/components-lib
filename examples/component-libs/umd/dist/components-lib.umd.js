@@ -44,7 +44,7 @@
   function render$1(_ctx, _cache) {
     return require$$0.openBlock(), require$$0.createElementBlock("svg", _hoisted_1$4, _hoisted_3$1);
   }
-  var PercentageChangeWidget_vue_vue_type_style_index_0_scoped_true_lang = ".PercentageChangeWidget[data-v-7b83ab17] {\n  position: relative;\n  border: 1px solid #e5e5e5;\n  padding: 0 1rem;\n  border-radius: 0.125rem;\n  background-color: #fff;\n  box-sizing: border-box;\n  height: 7rem;\n  --grows-color: #ea424f;\n}\n.PercentageChangeWidget.isGrows[data-v-7b83ab17] {\n  --grows-color: #2bbd7c;\n}\n.PercentageChangeWidget.isGrows.reverseColors[data-v-7b83ab17] {\n  --grows-color: #ea424f;\n}\n.PercentageChangeWidget *[data-v-7b83ab17] {\n  box-sizing: border-box;\n}\n.PercentageChangeWidget-tooltip[data-v-7b83ab17] {\n  position: absolute;\n  top: calc(.5rem - 2px);\n  right: calc(.5rem - 1px);\n}\n.PercentageChangeWidget-difference[data-v-7b83ab17] {\n  height: 1.5rem;\n  padding: 0.125rem 0;\n}\n.PercentageChangeWidget-difference > span[data-v-7b83ab17] {\n  font-size: 1.75rem;\n  vertical-align: baseline;\n  line-height: 0.67;\n  margin-right: 0.25rem;\n  color: #485359;\n  font-weight: 600;\n}\n.PercentageChangeWidget-difference > svg[data-v-7b83ab17] {\n  height: 1.19rem;\n  width: 1.19rem;\n  fill: var(--grows-color);\n  display: inline-block;\n  opacity: 0.5;\n  padding: 0.125rem;\n}\n.PercentageChangeWidget-comparedValues[data-v-7b83ab17] {\n  font-size: 0.875rem;\n  text-transform: uppercase;\n  font-style: italic;\n  font-weight: 600;\n  color: #a0acb3;\n  height: 2.25rem;\n  line-height: 2.25rem;\n}\n.PercentageChangeWidget-title[data-v-7b83ab17] {\n  font-size: 1rem;\n  font-style: normal;\n  color: #698696;\n  font-weight: 600;\n  font-size: 0.875rem;\n  margin: 0 -1rem 1rem;\n  padding: 0 1rem;\n  text-transform: none;\n  border-bottom: 1px solid #e5e5e5;\n  height: 2rem;\n  line-height: 2;\n}";
+  var PercentageChangeWidget_vue_vue_type_style_index_0_scoped_true_lang = ".PercentageChangeWidget[data-v-fe13800e] {\n  position: relative;\n  border: 1px solid #e5e5e5;\n  padding: 0 1rem;\n  border-radius: 0.125rem;\n  background-color: #fff;\n  box-sizing: border-box;\n  height: 7rem;\n  --grows-color: #ea424f;\n}\n.PercentageChangeWidget.isGrows[data-v-fe13800e] {\n  --grows-color: #2bbd7c;\n}\n.PercentageChangeWidget.isGrows.reverseColors[data-v-fe13800e] {\n  --grows-color: #ea424f;\n}\n.PercentageChangeWidget *[data-v-fe13800e] {\n  box-sizing: border-box;\n}\n.PercentageChangeWidget-tooltip[data-v-fe13800e] {\n  position: absolute;\n  top: calc(.5rem - 2px);\n  right: calc(.5rem - 1px);\n}\n.PercentageChangeWidget-difference[data-v-fe13800e] {\n  height: 1.5rem;\n  padding: 0.125rem 0;\n}\n.PercentageChangeWidget-difference > span[data-v-fe13800e] {\n  font-size: 1.75rem;\n  vertical-align: baseline;\n  line-height: 0.67;\n  margin-right: 0.25rem;\n  color: #485359;\n  font-weight: 600;\n}\n.PercentageChangeWidget-difference > svg[data-v-fe13800e] {\n  height: 1.19rem;\n  width: 1.19rem;\n  fill: var(--grows-color);\n  display: inline-block;\n  opacity: 0.5;\n  padding: 0.125rem;\n}\n.PercentageChangeWidget-comparedValues[data-v-fe13800e] {\n  font-size: 0.875rem;\n  text-transform: uppercase;\n  font-style: italic;\n  font-weight: 600;\n  color: #a0acb3;\n  height: 2.25rem;\n  line-height: 2.25rem;\n}\n.PercentageChangeWidget-title[data-v-fe13800e] {\n  font-size: 1rem;\n  font-style: normal;\n  color: #698696;\n  font-weight: 600;\n  font-size: 0.875rem;\n  margin: 0 -1rem 1rem;\n  padding: 0 1rem;\n  text-transform: none;\n  border-bottom: 1px solid #e5e5e5;\n  height: 2rem;\n  line-height: 2rem;\n}";
   const _sfc_main$3 = {
     components: {
       ArrowDown: render$1,
@@ -130,7 +130,7 @@
       }
     }
   };
-  require$$0.pushScopeId("data-v-7b83ab17");
+  require$$0.pushScopeId("data-v-fe13800e");
   const _hoisted_1$3 = { class: "PercentageChangeWidget-title" };
   const _hoisted_2$1 = { class: "PercentageChangeWidget-difference" };
   const _hoisted_3 = {
@@ -178,7 +178,7 @@
     ], 2);
   }
   _sfc_main$3.render = _sfc_render$2;
-  _sfc_main$3.__scopeId = "data-v-7b83ab17";
+  _sfc_main$3.__scopeId = "data-v-fe13800e";
   var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
   function getDefaultExportFromCjs(x) {
     return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, "default") ? x["default"] : x;
@@ -6565,153 +6565,7 @@
     }
   };
   _sfc_main$2.__scopeId = "data-v-55ae3f27";
-  var ATooltip_vue_vue_type_style_index_0_scoped_true_lang = `.ATooltip[data-v-106cb19b] {
-  display: inline-block;
-  position: relative;
-  height: 1.25rem;
-  width: 1.25rem;
-  border: 2px solid rgba(63, 141, 247, 0.5);
-  border-radius: 50%;
-  color: #3f8df7;
-  vertical-align: text-bottom;
-  text-align: center;
-  transition: background-color 0.25s ease-out;
-  background-color: transparent;
-  cursor: help;
-  line-height: 0;
-  box-sizing: border-box;
-}
-.ATooltip *[data-v-106cb19b] {
-  box-sizing: border-box;
-}
-.ATooltip > span[data-v-106cb19b] {
-  transform: scale3d(0, 0, 0);
-  transition: transform 0.25s ease, opacity 0.25s ease-in-out;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 10px 20px rgba(55, 70, 79, 0.19), 0 6px 6px rgba(55, 70, 79, 0.15);
-  border-radius: 0.125rem;
-  padding: 0.8rem 1.25rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: left;
-  color: #485359;
-  transform-origin: right top;
-  z-index: 2;
-  cursor: default;
-  top: 1.5rem;
-  width: 14rem;
-  /* &.bottomLeft {
-    top: 1.5rem;
-    left: -12rem;
-    &::before {
-      top: -.35rem;
-      right: 100%;
-      transform: translateX(115%) rotate(45deg);
-    }
-  }
-  &.bottomRight {
-    top: 1.5rem;
-    left: -.35rem;
-    &::before {
-      top: -.35rem;
-      left: .5rem;
-    }
-  }
-  */
-  /*&::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: -.5rem;
-    top: .75rem;
-  }*/
-}
-.ATooltip > span.right[data-v-106cb19b] {
-  top: -1.15rem;
-  left: 1.5rem;
-  transform-origin: 0 1.15rem;
-}
-.ATooltip > span.right[data-v-106cb19b]::before {
-  top: 1.15rem;
-  left: -0.35rem;
-}
-.ATooltip > span.left[data-v-106cb19b] {
-  top: -1.15rem;
-  right: 1.5rem;
-}
-.ATooltip > span.left[data-v-106cb19b]::before {
-  top: 1.15rem;
-  right: -0.35rem;
-}
-.ATooltip > span.bottomCenter[data-v-106cb19b] {
-  top: 1.5rem;
-  left: -7rem;
-}
-.ATooltip > span.bottomCenter[data-v-106cb19b]::before {
-  top: -0.35rem;
-  right: 50%;
-  transform: translateX(115%) rotate(45deg);
-}
-.ATooltip > span[data-v-106cb19b]::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -0.35rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  background-color: #fff;
-  transform-origin: center;
-  transform: rotate(45deg);
-  z-index: -1;
-}
-.ATooltip[data-v-106cb19b]::before, .ATooltip[data-v-106cb19b]::after {
-  content: "";
-  display: block;
-  width: 2px;
-  background-color: rgba(63, 141, 247, 0.5);
-  position: absolute;
-  left: calc(50% - 1px );
-  top: calc( 50% - 1px );
-  bottom: 3px;
-  transition: all 0.25s ease-in;
-}
-.ATooltip[data-v-106cb19b]::before {
-  top: 3px;
-  height: 2px;
-}
-.ATooltip[aria-hidden=false][data-v-106cb19b] {
-  background-color: #3f8df7;
-  transition: background-color 0.25s ease-in;
-}
-.ATooltip[aria-hidden=false] > span[data-v-106cb19b] {
-  transform: scale3d(1, 1, 1);
-  transition: transform 0.25s ease-in, opacity 0.25s ease-out;
-}
-.ATooltip[aria-hidden=false][data-v-106cb19b]::before, .ATooltip[aria-hidden=false][data-v-106cb19b]::after {
-  background-color: #fff;
-  bottom: auto;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  height: 68%;
-  transform-origin: center;
-  transition: all 0.25s ease-in;
-}
-.ATooltip[aria-hidden=false][data-v-106cb19b]::after {
-  transform: translateY(-50%) rotate(-45deg);
-}
-@keyframes toolTipFade-106cb19b {
-0% {
-    opacity: 0;
-    transform: scale3d(0, 0, 0);
-}
-100% {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-}
-}`;
+  var ATooltip_vue_vue_type_style_index_0_scoped_true_lang = '.ATooltip[data-v-66a36786] {\n  display: inline-block;\n  position: relative;\n  height: 1.25rem;\n  width: 1.25rem;\n  border: 0.125rem solid rgba(63, 141, 247, 0.5);\n  border-radius: 50%;\n  color: #3f8df7;\n  vertical-align: text-bottom;\n  text-align: center;\n  transition: background-color 0.25s ease-out;\n  background-color: transparent;\n  cursor: help;\n  line-height: 0;\n  box-sizing: border-box;\n}\n.ATooltip *[data-v-66a36786] {\n  box-sizing: border-box;\n}\n.ATooltip > span[data-v-66a36786] {\n  transform: scale3d(0, 0, 0);\n  transition: transform 0.25s ease, opacity 0.25s ease-in-out;\n  position: absolute;\n  background-color: #fff;\n  box-shadow: 0 10px 20px rgba(55, 70, 79, 0.19), 0 6px 6px rgba(55, 70, 79, 0.15);\n  border-radius: 0.125rem;\n  padding: 0.8rem 1.25rem 1rem;\n  font-size: 0.875rem;\n  line-height: 1.5;\n  text-align: left;\n  color: #485359;\n  transform-origin: right top;\n  z-index: 2;\n  cursor: default;\n  top: 1.5rem;\n  width: 14rem;\n  /* &.bottomLeft {\n    top: 1.5rem;\n    left: -12rem;\n    &::before {\n      top: -.35rem;\n      right: 100%;\n      transform: translateX(115%) rotate(45deg);\n    }\n  }\n  &.bottomRight {\n    top: 1.5rem;\n    left: -.35rem;\n    &::before {\n      top: -.35rem;\n      left: .5rem;\n    }\n  }\n  */\n}\n.ATooltip > span.right[data-v-66a36786] {\n  top: -1.15rem;\n  left: 1.5rem;\n  transform-origin: 0 1.15rem;\n}\n.ATooltip > span.right[data-v-66a36786]::before {\n  top: 1.15rem;\n  left: -0.35rem;\n}\n.ATooltip > span.left[data-v-66a36786] {\n  top: -1.15rem;\n  right: 1.5rem;\n}\n.ATooltip > span.left[data-v-66a36786]::before {\n  top: 1.15rem;\n  right: -0.35rem;\n}\n.ATooltip > span.bottomCenter[data-v-66a36786] {\n  top: 1.5rem;\n  left: -7rem;\n}\n.ATooltip > span.bottomCenter[data-v-66a36786]::before {\n  top: -0.35rem;\n  right: 50%;\n  transform: translateX(115%) rotate(45deg);\n}\n.ATooltip > span[data-v-66a36786]::before {\n  content: "";\n  display: block;\n  position: absolute;\n  top: -0.35rem;\n  width: 0.75rem;\n  height: 0.75rem;\n  background-color: #fff;\n  transform-origin: center;\n  transform: rotate(45deg);\n  z-index: -1;\n}\n.ATooltip[data-v-66a36786]::before, .ATooltip[data-v-66a36786]::after {\n  content: "";\n  display: block;\n  width: 0.125rem;\n  background-color: rgba(63, 141, 247, 0.5);\n  position: absolute;\n  left: calc(50% - .0625rem);\n  top: calc(50% - .0625rem);\n  bottom: 0.1875rem;\n  transition: all 0.25s ease-in;\n}\n.ATooltip[data-v-66a36786]::before {\n  top: 0.1875rem;\n  height: 0.125rem;\n}\n.ATooltip[aria-hidden=false][data-v-66a36786] {\n  background-color: #3f8df7;\n  transition: background-color 0.25s ease-in;\n}\n.ATooltip[aria-hidden=false] > span[data-v-66a36786] {\n  transform: scale3d(1, 1, 1);\n  transition: transform 0.25s ease-in, opacity 0.25s ease-out;\n}\n.ATooltip[aria-hidden=false][data-v-66a36786]::before, .ATooltip[aria-hidden=false][data-v-66a36786]::after {\n  background-color: #fff;\n  bottom: auto;\n  top: 50%;\n  transform: translateY(-50%) rotate(45deg);\n  height: 68%;\n  transform-origin: center;\n  transition: all 0.25s ease-in;\n}\n.ATooltip[aria-hidden=false][data-v-66a36786]::after {\n  transform: translateY(-50%) rotate(-45deg);\n}\n@keyframes toolTipFade-66a36786 {\n0% {\n    opacity: 0;\n    transform: scale3d(0, 0, 0);\n}\n100% {\n    opacity: 1;\n    transform: scale3d(1, 1, 1);\n}\n}';
   const _sfc_main$1 = {
     name: "ATooltip",
     data() {
@@ -6743,7 +6597,7 @@
       }
     }
   };
-  require$$0.pushScopeId("data-v-106cb19b");
+  require$$0.pushScopeId("data-v-66a36786");
   const _hoisted_1$2 = ["aria-hidden"];
   require$$0.popScopeId();
   function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
@@ -6764,7 +6618,7 @@
     ], 40, _hoisted_1$2);
   }
   _sfc_main$1.render = _sfc_render$1;
-  _sfc_main$1.__scopeId = "data-v-106cb19b";
+  _sfc_main$1.__scopeId = "data-v-66a36786";
   const _hoisted_1$1 = {
     version: "1.1",
     xmlns: "http://www.w3.org/2000/svg",
