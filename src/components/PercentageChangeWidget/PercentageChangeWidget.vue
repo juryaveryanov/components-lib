@@ -5,7 +5,7 @@
   >
     <h5 class="PercentageChangeWidget-title">
       <slot name="controls" />
-      {{ title }}
+      {{ aTitle }}
     </h5>
     <div
       class="PercentageChangeWidget-difference"
@@ -47,7 +47,7 @@ export default {
     ArrowUp
   },
   props: {
-    title: {
+    aTitle: {
       type: String,
       default: ''
     },
@@ -56,14 +56,14 @@ export default {
       validator (val) {
         return val >= 0
       },
-      default: 99
+      default: 0
     },
     newValue: {
       type: Number,
       validator (val) {
         return val >= 0
       },
-      default: 100
+      default: 0
     },
     locale: {
       type: String,
@@ -157,7 +157,7 @@ export default {
     }
     &-tooltip {
       position: absolute;
-      top: calc(.5rem - 2px);
+      top: .3125rem;
       right: calc(.5rem - 1px);
     }
 

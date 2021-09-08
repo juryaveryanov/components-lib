@@ -7,7 +7,7 @@ export default {
   title: 'Widgets/Percentage change widget',
   component: PercentageChangeWidget,
   argTypes: {
-    title: {
+    aTitle: {
       control: 'text',
       description: 'Title text',
       default: 'Title'
@@ -105,7 +105,7 @@ export const Default = Template.bind({})
 Default.args = {
   oldValue: 12345,
   newValue: 54321,
-  title: 'Active Publishers',
+  aTitle: 'Widget Title',
   currencyCode: 'USD',
   locale: 'en-US',
   newValueFirst: true,
@@ -129,19 +129,25 @@ export const Decrease = Template.bind({})
 Decrease.args = {
   oldValue: 54321,
   newValue: 12345,
-  title: 'Total Spend NET'
-}
-
-export const Increase = Template.bind({})
-Decrease.args = {
-  newValue: 54321,
-  oldValue: 12345,
-  title: 'Total Spend NET'
+  aTitle: 'Widget Title'
 }
 
 Decrease.parameters = {
   docs: {
     source: { type: 'code', code: getCodeSnippet(PercentageChangeWidget, Decrease.args) }
+  }
+}
+
+export const Increase = Template.bind({})
+Increase.args = {
+  aTitle: 'Widget Title',
+  newValue: 54321,
+  oldValue: 12345
+}
+
+Increase.parameters = {
+  docs: {
+    source: { type: 'code', code: getCodeSnippet(PercentageChangeWidget, Increase.args) }
   }
 }
 
