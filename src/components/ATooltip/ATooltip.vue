@@ -33,9 +33,9 @@ export default {
     setPosition () {
       const offset = this.$refs.span.getBoundingClientRect()
       let position = 'right'
-      if (offset.left + 230 > window.innerWidth) {
+      if (offset.left + 250 > window.innerWidth) {
         position = 'left'
-        if (offset.left - 230 < 0) {
+        if (offset.left - 250 < 0) {
           position = 'bottomCenter'
         }
       }
